@@ -8,12 +8,6 @@ html, body{
   width: 100%
 }
 
-body{
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0),
-  rgb(83, 83, 83), rgb(177, 176, 176)) no-repeat; */
-  /* background-color: black; */
-}
-
 #root{
   display: grid;
   min-height: 100%;
@@ -30,45 +24,5 @@ button{
   outline: none;
   border: none;
   border-bottom: 1px solid black;
-}
-
-/* extra styles */
-
-/* Inline #10 | http://localhost:3000/ */
-
-.noUi-horizontal .noUi-handle {
-  /* width: 34px; */
-  /* background-color: \); */
-  width: 10px;
-  background-color: rgb(27, 1, 1);
-}
-
-.noUi-base .noUi-origin .noUi-handle{
-  width: 10px;
-}
-
-.noUi-base .noUi-origin{
-  
-  width: 10.22%;
-}
-
-.music-controls .noUi-target{
-  background-color: black;
-}
-
-.noUi-base .noUi-origin .noUi-handle::before,
-.noUi-base .noUi-origin .noUi-handle::after {
-  left: 0
-}
-
-
-
-.noUi-target {
-  padding: 0 15px 0 0;
-}
-
-.track-slider .noUibase .noUi-connects {
-  margin: 0 20px;
-  width: calc(100% - 20px);
 }
 

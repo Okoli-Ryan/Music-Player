@@ -1,0 +1,26 @@
+.music-list {
+  grid-area: list;
+  border: 1px solid rgb(27, 1, 1);
+  border-top: 0;
+  background-color: black;
+}
+
+.music-track {
+  width: 100%;
+  text-align: justify;
+  color: white;
+  border-bottom: 1px solid white;
+  font-family: cursive;
+}
+
+p.artist {
+  font-size: 1em;
+  margin: 0 0 0.6em 0.6em;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+p.title {
+  margin: 0 0 0 0.6em;
+  font-style: italic;
+}

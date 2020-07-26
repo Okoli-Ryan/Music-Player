@@ -4,8 +4,7 @@ import Heading from "./components/header";
 import VinylRecord from "./components/vinylRecordComponent";
 import MusicControls from "./components/musicControls";
 import MusicList from "./components/musicList";
-import FileForm from "./components/fileForm";
-import Sound from './components/Sound';
+import Sound from './components/Sound'
 import {useSelector} from 'react-redux';
 
 const songNames = [
@@ -18,12 +17,11 @@ function App() {
 
   return (
     <>
-      {/* <Heading /> */}-
-      {/* <VinylRecord /> */}
+      {/* <Heading />
+      <VinylRecord /> */}
       <MusicControls playing={useSelector(state => state.playing)} duration={useSelector(state => state.duration)} set={0}/>
       <MusicList songList={songNames}/>
-      <Sound/>
-      {/* <FileForm/> */}
+      <Sound />
     </>
   );
 }

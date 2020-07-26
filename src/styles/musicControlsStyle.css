@@ -1,0 +1,28 @@
+.music-controls {
+  grid-area: controls;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  flex-direction: row;
+  background-color: 
+  /* rgb(17, 1, 1); */
+  yellowgreen;
+}
+
+.track-slider {
+  width: 50%;
+}
+
+#track-level-max,
+#track-level {
+  color: white;
+  font-family:  cursive;
+  width: 3em;
+  text-align: center;
+
+}
+
+button{
+  cursor: pointer;
+}

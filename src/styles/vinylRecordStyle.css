@@ -1,0 +1,21 @@
+.current-song{
+    grid-area: body;
+  }
+  
+  .image-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img{
+    /* animation-name: spin; */
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes spin{
+    to{
+      transform: rotateZ(360deg);
+    }
+  }  
