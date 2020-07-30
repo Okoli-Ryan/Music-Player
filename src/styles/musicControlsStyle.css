@@ -2,16 +2,52 @@
   grid-area: controls;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   height: 100%;
-  flex-direction: row;
+  flex-direction: column;
   background-color: 
-  /* rgb(17, 1, 1); */
-  yellowgreen;
+  rgb(17, 1, 1);
+}
+
+.slider-area, .control-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.previous, .next, .play-pause{
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  outline: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.previous{
+  background-image: url('../images/next.png');
+}
+
+.next{
+  background-image: url('../images/next.png');
+  transform: rotateZ(180deg)
+
 }
 
 .track-slider {
-  width: 50%;
+  width: 50vw;
+  max-width: 12rem;
+}
+
+.css-yvszuv-Slider{
+  min-width: 50vw;
+  width: 50vw;
+  max-width: 15rem;
 }
 
 #track-level-max,
@@ -25,4 +61,10 @@
 
 button{
   cursor: pointer;
+  transition: background-color .3s ease-in-out
 }
+
+button:hover{
+  background-color: grey
+}
+

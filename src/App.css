@@ -3,26 +3,37 @@
 @import url('./styles/musicListStyle.css');
 @import url('./styles/vinylRecordStyle.css');
 
-html, body{
-  height: 100%;
-  width: 100%
+html,
+body,
+#root {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
-#root{
-  display: grid;
-  min-height: 100%;
-  grid-template-areas:
-      "header header header"
-      "list body body"
-      "list controls controls";
-  grid-template-columns: 250px 3fr 1fr;
-  grid-template-rows: 100px 1fr 100px;
+#root {
+	display: grid;
+	grid-template-areas:
+		'header header'
+		'list body'
+		'list controls';
+	grid-template-columns: 15rem auto;
+	grid-template-rows: 4.5rem minmax(30%, auto) 5rem;
 }
 
-button{
-  background: none;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid black;
+button {
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid black;
 }
 
+@media only screen and (max-width: 768px) {
+	#root {
+		grid-template-areas:
+			'header header'
+			'body body'
+			'controls controls';
+		grid-template-columns: 1fr;
+	}
+}
