@@ -4,11 +4,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import InputSlider from 'react-input-slider';
 import ReactHowler from 'react-howler';
 import Controls from './musicControlsButtonContainer';
+import GUTM from '../songs/Justin Bieber Ft. Poo Bear - Get Used to me.mp3'
+import CW from '../songs/Major Lazer - Cold Water.mp3'
 let s;
 
 const songnames = [
-	encodeURI(`\\songs\\Justin Bieber Ft. Poo Bear - Get Used to me.mp3`),
-	encodeURI(`\\songs\\Major Lazer - Cold Water.mp3`),
+	// encodeURI(`\\songs\\Justin Bieber Ft. Poo Bear - Get Used to me.mp3`),
+	// encodeURI(`\\songs\\Major Lazer - Cold Water.mp3`),
+	GUTM,
+	CW
 ];
 
 const formatValue = (val) => {
